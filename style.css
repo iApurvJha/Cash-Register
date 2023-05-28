@@ -1,7 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
-    max-width: 350px;
+    max-width: 450px;
     margin: auto;
+    font-family: 'Lato', sans-serif;
 }
-/* h1{
-    color: aquamarine;
-} */
+
+:root{
+    --primary-color:#db2777;
+}
+
+header h1{
+
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+}
+.heading{
+    margin-top: 1rem;
+}
+
+.billamount1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#billamount{
+    translate: 20px;
+    border-color: var(--primary-color);
+    width: 25rem;
+    height: 2rem;
+    border-radius: 5px;
+
+
+}
+.cashgiven{
+    display: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#cashgiven{
+    display: none;
+    border-color: var(--primary-color);
+    width: 25rem;
+    height: 2rem;
+    border-radius: 5px; 
+}
+#check{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    cursor: pointer;
+    color: white;
+    translate: 120px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+#hidden{
+    text-align: center;
+}
+
+#return{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.table{
+    font-size:large ;
+    font-weight: bold;
+    border-color: var(--primary-color);
+    text-align: center;
+    width: 70rem;
+    height: 3rem;
+}
+.boxSize{
+    text-align: center;
+    width: 70rem;
+    height: 2rem;
+}
+
+footer{
+    font-size:large ;
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem;
+}
+#check:hover{
+    color: var(--primary-color);
+    background-color: white;
+}

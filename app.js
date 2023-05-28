@@ -10,7 +10,9 @@ var twenty=document.getElementById("20")
 var ten=document.getElementById("10")
 var five=document.getElementById("5")
 var one=document.getElementById("1")
+var cashgivenheading=document.querySelector(".cashgivenheading")
 // var displaydiv=document.getElementById("show")
+
 
 check.addEventListener("click",clickHandler)
 
@@ -33,9 +35,22 @@ cashgiven.addEventListener("keypress" , function(event){
         check.click()
     }
 })
+billamount.addEventListener("keypress" , function(event){
+    if(event.key=="Enter"){
+        check.click()
+    }
+})
+
+
 
 function clickHandler(){
     var bill_amount=Number(billamount.value)
+    if(bill_amount>=0){
+        cashgiven.style.display="block"
+        cashgivenheading.style.display="block"
+        
+       
+    }
     var cash_amount=Number(cashgiven.value)
     if(bill_amount>cash_amount){
         hidden.innerHTML="Do you want to wash plates"

@@ -10,82 +10,97 @@
 </head>
 
 <body>
-    <h1>bill amount</h1>
-    <input id="billamount" type="number">
-    <div id="show">
-
-        <h1 >Cash Given</h1>
-        <input id="cashgiven" type="number">
+    <header>
+        <h1>CASH REGISTER MANAGER</h1>
+  
+           
+    </header>
+    <div class="heading">
+        <h3>Enter the bill amount and cash given by the coustomer and know minimum number of notes to return</h3>
+        <!-- <p>Enter the bill amount and cash given by the coustomer and know minimum number of notes to return</p> -->
     </div>
-    <br>
-    <br>
-    <button id="check">Check</button>
-    <br>
-    <br>
+    <main>
+
+        <h1 class="billamount1">Bill amount:</h1>
+        <input id="billamount" type="number">
+        <div id="show">
+            
+            <h1 class="cashgiven cashgivenheading">Cash Given</h1>
+            <input id="cashgiven" type="number">
+        </div>
+        <br>
+        <br>
+        <button id="check">Check</button>
+        <br>
+        <br>
     <h2 id="hidden"></h2>
     <br>
     <br>
 
     <h1 id="return">Return Change</h1>
     <br>
-    <table border="1">
+    <table class="table" border="1">
         <tr>
-            <td >
+            <td  >
 
-                NO of notes
+                No of notes
             </td>
-            <td id="2000">
-
-            </td>
-            <td id="500">
-
+            <td id="2000"  class="boxSize">
 
             </td>
-            <td id="100">
-
+            <td id="500" class="boxSize">
+                
+                
             </td>
-            <td id="20"> 
-
-
+            <td id="100" class="boxSize">
+                
             </td>
-            <td id="10">
-
+            <td id="20" class="boxSize"> 
+                
+                
             </td>
-            <td id="5">
-
+            <td id="10" class="boxSize">
+                
             </td>
-            <td id="1">
-
+            <td id="5" class="boxSize">
+                
+            </td>
+            <td id="1" class="boxSize">
+                
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr >
+            <td class="boxSize">
                 Notes
             </td>
-            <td>
+            <td class="boxSize">
                 2000
             </td>
-            <td>
+            <td class="boxSize">
                 500
             </td>
-            <td>
+            <td class="boxSize">
                 100
             </td>
-            <td>
+            <td class="boxSize">
                 20
             </td>
-            <td>
+            <td class="boxSize">
                 10
-            </td>
-            <td>
+            </td class="boxSize">
+            <td class="boxSize">
                 5
             </td>
-            <td>
+            <td class="boxSize">
                 1
             </td>
         </tr>
     </table>
-
+</main>
+<footer>
+    © | 2021 | Apurv Jha
+</footer>
+    
     <script src="app.js"></script>
 </body>
 
